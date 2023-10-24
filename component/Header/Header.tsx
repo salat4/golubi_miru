@@ -1,22 +1,32 @@
 import React from "react";
-import Image from "@/node_modules/next/image";
-function Header() {
+import Image from "next/image";
+// import logo from "../../public/image/Exclude.svg";
+import Logo from "@/public/svg/Logo";
+import s from "../Header/Header.module.css";
+import Button from "../Button/Button";
+import ArrowDown from "@/public/svg/ArrowDown";
+const Header = () => {
   return (
-    <section>
-      <div>{/* <Image></Image> */}</div>
-      <ul>
+    <section className={s.container__header}>
+      <div className={s.header__logo}>
+        <Logo />
+        <p>Голуби миру</p>
+      </div>
+      <ul className={s.header__navbar}>
         <li>Про фонд</li>
-        <li>Проєкти</li>
+        <li>
+          Проєкти <ArrowDown />
+        </li>
         <li>Новини</li>
         <li>Контакти</li>
       </ul>
-      <ul>
+      <ul className={s.header__language}>
         <li>UA</li>
         <li>ENG</li>
       </ul>
-      <button>Підтримка</button>
+      <Button text="Підтримати" />
     </section>
   );
-}
+};
 
 export default Header;
