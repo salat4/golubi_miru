@@ -1,7 +1,7 @@
 import React from "react";
-import s from "../Hero/Hero.module.css";
+import s from "./Hero.module.css";
 const Hero = () => {
-  return <div>Hero</div>;
+  return <div className={s.hero__container}>Hero</div>;
 };
 
 export default Hero;

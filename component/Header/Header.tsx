@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
-// import logo from "../../public/image/Exclude.svg";
 import Logo from "@/public/svg/Logo";
-import s from "../Header/Header.module.css";
+import s from "./Header.module.css";
 import Button from "../Button/Button";
 import ArrowDown from "@/public/svg/ArrowDown";
 const Header = () => {
